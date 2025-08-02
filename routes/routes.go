@@ -26,7 +26,7 @@ type Book struct {
 }
 
 func SetupRoutes(r *gin.Engine) {
-	// listen and serve on 0.0.0.0:8080
+	// listen and serve onhttp://localhost:8080
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, Response{Message: "Hello y!"})
 	})
